@@ -3,29 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>UD Churrax | Página Oficial</title>
-
-    <meta name="description"
-        content="Web oficial de UD Churrax. Noticias,
-        plantilla, resultados y clasificación.">
-
+    <meta name="theme-color" content="#0D182E">
+    <meta name="description" content="Web oficial de UD Churrax, equipo de fútbol 7 de Sevilla. Actualidad, plantilla, competición e historia.">
+    <title>UD Churrax | Fútbol 7 desde Sevilla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header>
-        <img src="images/escudo.png" alt="Escudo UD Churrax">
-        <h1>UNIÓN DEPORTIVA CHURRAX</h1>
-        <p>Temporada 2026/27</p>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="UD Churrax, inicio">
+            <img class="brand-mark" src="images/escudo.png" alt="">
+            <span class="brand-name">UD <strong>CHURRAX</strong></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="club.html">El club</a>
+            <a href="plantilla.html">Plantilla</a>
+            <a href="competicion.html">Competición</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="archivo.html">Archivo</a>
+            <a href="galeria.html">Galería</a>
+        </nav>
     </header>
 
     <main>
-        <h2>Bienvenidos a la web oficial del Churrax</h2>
-        <p>Todos los detalles de nuestro equipo.</p>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="eyebrow-line"></span> SEVILLA · FÚTBOL 7</p>
+                <h1>EL BARRIO<br>JUEGA <span>UNIDO.</span></h1>
+                <p class="hero-copy">Siete en el campo. Uno en el corazón.<br>La casa digital de UD Churrax: equipo, competición e historias de cada temporada.</p>
+                <div class="hero-actions">
+                    <a class="button button-gold" href="competicion.html">Sigue la temporada <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="club.html">Conoce el club <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-location"><span class="location-dot"></span> SEVILLA, ANDALUCÍA</div>
+            </div>
+            <a class="hero-art" href="galeria.html" aria-label="Ver galería de UD Churrax">
+                <img class="hero-photo" src="images/galeria/IMG-20240213-WA0108.jpg" alt="Ventas vs UD Churrax 11/02/2024">
+                <span class="photo-caption">
+                    <span>UD CHURRAX · GALERÍA</span>
+                    <strong class="photo-caption-title">UN MISMO LATIDO.</strong>
+                    <span class="photo-caption-season">VER FOTOS Y VÍDEOS ↗</span>
+                </span>
+            </a>
+            <div class="hero-bottom">
+                <span>EL CLUB · LA PLANTILLA · LA COMPETICIÓN</span>
+                <span>DESDE SEVILLA, CON ORGULLO</span>
+                <a href="#actualidad">EXPLORA EL CLUB <b aria-hidden="true">↓</b></a>
+            </div>
+        </section>
+
+        <section class="overview section-wrap" id="actualidad" aria-labelledby="overview-title">
+            <div class="section-kicker"><span>01</span> EL CLUB, AL DÍA</div>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ACTUALIDAD UD CHURRAX</p>
+                    <h2 id="overview-title">TODO EL EQUIPO.<br><span>EN UN MISMO SITIO.</span></h2>
+                </div>
+                <p class="heading-copy">Un vistazo rápido a cada área del club. Entra en cada apartado para profundizar, consultar detalles y revivir las temporadas.</p>
+            </div>
+            <div class="overview-grid home-grid">
+                <a class="overview-card overview-feature" href="competicion.html#calendario">
+                    <span class="card-index">01 / COMPETICIÓN</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">2026<span>/27</span></strong>
+                    <span class="card-caption">Calendario publicado · debut el 11 NOV ante CD Nagogol Athletic FC</span>
+                    <span class="card-foot">CLASIFICACIÓN, JORNADAS Y RESULTADOS <b aria-hidden="true">→</b></span>
+                </a>
+                <a class="overview-card" href="plantilla.html">
+                    <span class="card-index">02 / PLANTILLA</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">EL EQUIPO</strong>
+                    <span class="card-caption">Jugadores, cuerpo técnico y estadísticas</span>
+                    <span class="card-foot">ENTRA EN LA PLANTILLA <b aria-hidden="true">→</b></span>
+                </a>
+                <a class="overview-card" href="club.html">
+                    <span class="card-index">03 / IDENTIDAD</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">EL CLUB</strong>
+                    <span class="card-caption">Historia, escudo y filosofía Churrax</span>
+                    <span class="card-foot">CONOCE NUESTRA HISTORIA <b aria-hidden="true">→</b></span>
+                </a>
+                <a class="overview-card" href="noticias.html">
+                    <span class="card-index">04 / ACTUALIDAD</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">AL DÍA</strong>
+                    <span class="card-caption">Crónicas, comunicados y noticias</span>
+                    <span class="card-foot">LEER NOTICIAS <b aria-hidden="true">→</b></span>
+                </a>
+                <a class="overview-card" href="archivo.html">
+                    <span class="card-index">05 / MEMORIA</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">TEMPORADAS</strong>
+                    <span class="card-caption">Historias y resultados que perduran</span>
+                    <span class="card-foot">ABRIR EL ARCHIVO <b aria-hidden="true">→</b></span>
+                </a>
+                <a class="overview-card overview-gallery-card" href="galeria.html">
+                    <span class="card-index">06 / MOMENTOS</span>
+                    <span class="card-icon" aria-hidden="true">↗</span>
+                    <strong class="card-value">GALERÍA</strong>
+                    <span class="card-caption">Fotos y vídeos de partidos y postpartidos</span>
+                    <span class="card-foot">VER FOTOS Y VÍDEOS <b aria-hidden="true">→</b></span>
+                </a>
+            </div>
+            <div class="overview-note"><span class="status-dot"></span> Los datos deportivos se publican cuando el club los confirma.</div>
+        </section>
+
+        <section class="home-season section-dark">
+            <div class="section-wrap home-season-inner">
+                <div>
+                    <div class="section-kicker section-kicker-light"><span>02</span> TEMPORADA EN CURSO</div>
+                    <h2>2026 / 27<br><span>EL CAMINO SIGUE.</span></h2>
+                </div>
+                <p>18 jornadas ya programadas. UD Churrax debuta el 11 de noviembre ante CD Nagogol Athletic FC en Vega de Triana.</p>
+                <a class="button button-gold" href="competicion.html#calendario">Explorar temporada <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html"><img src="images/escudo.png" alt="" aria-hidden="true">UD <strong>CHURRAX</strong></a>
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+            <a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a>
+        </nav>
+        <span>FÚTBOL 7 · SEVILLA</span>
+    </footer>
+    <script src="gallery-data.js"></script>
+    <script src="gallery.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0D182E">
+    <meta name="description" content="Primera División IMD Sevilla 2026/27: resumen, clasificación, calendario y resultados de UD Churrax.">
+    <title>Competición | UD Churrax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="UD Churrax, inicio"><img class="brand-mark" src="images/escudo.png" alt=""><span class="brand-name">UD <strong>CHURRAX</strong></span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html" aria-current="page">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a></nav>
+    </header>
+    <main>
+        <section class="page-hero section-dark">
+            <div class="section-wrap">
+                <a class="breadcrumb" href="index.html">INICIO <span>/</span> COMPETICIÓN</a>
+                <p class="eyebrow">PRIMERA DIVISIÓN · IMD SEVILLA · TEMPORADA 2026/27</p>
+                <h1># <span>COMPETICIÓN</span></h1>
+                <p class="page-lead">Toda la temporada 2026/27 de UD Churrax: la liga, sus equipos, las jornadas y el histórico de encuentros.</p>
+            </div>
+        </section>
+        <nav class="competition-index section-wrap" aria-label="Secciones de Competición">
+            <a href="#resumen"><span>01</span><strong>RESUMEN</strong><small>La competición de un vistazo</small><b aria-hidden="true">↗</b></a>
+            <a href="#clasificacion"><span>02</span><strong>CLASIFICACIÓN</strong><small>Los diez equipos de la liga</small><b aria-hidden="true">↗</b></a>
+            <a href="#season-tracker"><span>03</span><strong>SEASON TRACKER</strong><small>Evolución de la temporada</small><b aria-hidden="true">↗</b></a>
+            <a href="#calendario"><span>04</span><strong>CALENDARIO</strong><small>Las 18 jornadas</small><b aria-hidden="true">↗</b></a>
+            <a href="#resultados"><span>05</span><strong>RESULTADOS</strong><small>Histórico de encuentros</small><b aria-hidden="true">↗</b></a>
+        </nav>
+        <section class="competition-summary section-wrap" id="resumen">
+            <div class="detail-heading">
+                <span class="section-kicker"><span>01</span> TEMPORADA 2026 / 27</span>
+                <h2>RESUMEN<br><span>DE LA LIGA.</span></h2>
+            </div>
+            <p class="competition-section-lead">La competición de un vistazo</p>
+            <div class="competition-dashboard">
+                <section class="competition-dashboard-card competition-facts" aria-labelledby="competition-facts-title">
+                    <h3 id="competition-facts-title">INFORMACIÓN DE LA COMPETICIÓN</h3>
+                    <div class="competition-facts-grid" id="competition-facts"></div>
+                </section>
+                <section class="competition-dashboard-card" aria-labelledby="last-churrax-match-title">
+                    <h3 id="last-churrax-match-title">ÚLTIMO PARTIDO DEL CHURRAX</h3>
+                    <div id="last-churrax-match"></div>
+                </section>
+                <section class="competition-dashboard-card" aria-labelledby="next-churrax-match-title">
+                    <h3 id="next-churrax-match-title">PRÓXIMO PARTIDO</h3>
+                    <div id="next-churrax-match"></div>
+                </section>
+                <section class="competition-dashboard-card" aria-labelledby="nearby-standings-title">
+                    <h3 id="nearby-standings-title">CLASIFICACIÓN RESUMIDA</h3>
+                    <p class="dashboard-card-subtitle">Los equipos más cercanos a UD Churrax</p>
+                    <div id="nearby-standings"></div>
+                    <a class="dashboard-more-link" href="#clasificacion">Ver clasificación completa ↗</a>
+                </section>
+                <section class="competition-dashboard-card" aria-labelledby="latest-round-title">
+                    <h3 id="latest-round-title">ÚLTIMA JORNADA</h3>
+                    <div id="latest-round-results"></div>
+                    <a class="dashboard-more-link" href="#resultados">Ver histórico de encuentros ↗</a>
+                </section>
+            </div>
+        </section>
+        <section class="detail-section section-wrap" id="clasificacion">
+            <div class="detail-heading">
+                <span class="section-kicker"><span>02</span> PRIMERA DIVISIÓN · IMD SEVILLA</span>
+                <h2>CLASIFICACIÓN<br><span>LOS DIEZ EQUIPOS.</span></h2>
+            </div>
+            <p class="competition-section-lead">Los diez equipos de la liga</p>
+            <div class="standings-toolbar">
+                <label for="standings-round-select">CONSULTAR JORNADA
+                    <select id="standings-round-select" aria-describedby="standings-round-status"></select>
+                </label>
+                <div class="standings-key" aria-label="Zonas de ascenso y descenso">
+                    <span><i class="promotion-marker" aria-hidden="true"></i> Ascienden</span>
+                    <span><i class="relegation-marker" aria-hidden="true"></i> Descienden</span>
+                </div>
+            </div>
+            <p class="standings-round-status" id="standings-round-status" aria-live="polite"></p>
+            <div class="detail-table-wrap">
+                <table class="detail-table standings-table">
+                    <thead><tr><th>POS.</th><th>EQUIPO</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>PNP</th><th>GF</th><th>GC</th><th>DG</th><th>PTS</th><th>RACHA</th></tr></thead>
+                    <tbody id="standings-body"></tbody>
+                </table>
+            </div>
+            <p class="data-note">PJ: partidos jugados · PG: ganados · PE: empatados · PP: perdidos · PNP: no presentados · GF/GC: goles a favor/en contra · DG: diferencia de goles. La racha muestra los cinco últimos resultados (V, E, D).</p>
+        </section>
+        <section class="detail-section season-tracker section-wrap" id="season-tracker">
+            <div class="detail-heading">
+                <span class="section-kicker"><span>03</span> TEMPORADA 2026 / 27</span>
+                <h2>SEASON<br><span>TRACKER.</span></h2>
+            </div>
+            <p class="competition-section-lead">La evolución del Churrax, jornada a jornada.</p>
+            <div class="tracker-stat-grid" id="tracker-stats" aria-live="polite"></div>
+            <div class="tracker-chart-grid">
+                <section class="tracker-panel" aria-labelledby="tracker-position-title">
+                    <h3 id="tracker-position-title">EVOLUCIÓN EN LA CLASIFICACIÓN</h3>
+                    <div class="tracker-chart" id="tracker-position-chart"></div>
+                </section>
+                <section class="tracker-panel" aria-labelledby="tracker-points-title">
+                    <h3 id="tracker-points-title">PUNTOS · ZONA ALTA</h3>
+                    <div class="tracker-chart" id="tracker-points-chart"></div>
+                    <div class="tracker-legend" id="tracker-points-legend"></div>
+                </section>
+            </div>
+            <div class="tracker-bottom-grid">
+                <section class="tracker-panel tracker-comparison" aria-labelledby="tracker-comparison-title">
+                    <h3 id="tracker-comparison-title">COMPARACIÓN CON LA ZONA ALTA</h3>
+                    <div id="tracker-comparison-table"></div>
+                </section>
+                <section class="tracker-panel tracker-streaks" aria-labelledby="tracker-streaks-title">
+                    <h3 id="tracker-streaks-title">RACHAS</h3>
+                    <div id="tracker-streaks"></div>
+                </section>
+            </div>
+            <p class="data-note">La evolución utiliza las clasificaciones guardadas en cada jornada. Los datos no registrados se muestran como pendientes.</p>
+        </section>
+        <section class="section-dark detail-dark" id="calendario">
+            <div class="section-wrap">
+                <div class="detail-heading"><span class="section-kicker section-kicker-light"><span>04</span> PRIMERA DIVISIÓN · IMD SEVILLA</span><h2>CALENDARIO<br><span>LAS 18 JORNADAS.</span></h2></div>
+                <p class="competition-section-lead competition-section-lead-light">Las 18 jornadas</p>
+                <p class="data-note data-note-light schedule-intro">Primera fase de la temporada 2026/27, organizada por vueltas y jornadas. Los partidos de UD Churrax aparecen destacados.</p>
+                <div class="schedule-toolbar">
+                    <label for="schedule-round-select">JORNADA
+                        <select id="schedule-round-select">
+                            <option value="all">Todas las jornadas</option>
+                        </select>
+                    </label>
+                    <label class="schedule-churrax-filter" for="schedule-churrax-only">
+                        <input id="schedule-churrax-only" type="checkbox">
+                        Solo partidos del Churrax
+                    </label>
+                </div>
+                <div class="fixture-calendar" id="fixture-calendar"></div>
+                <noscript><p class="data-note data-note-light">Activa JavaScript para consultar el calendario completo.</p></noscript>
+            </div>
+        </section>
+        <section class="detail-section section-wrap" id="resultados">
+            <div class="detail-heading"><span class="section-kicker"><span>05</span> TEMPORADA 2026 / 27</span><h2>RESULTADOS<br><span>HISTÓRICO.</span></h2></div>
+            <p class="competition-section-lead">Histórico de encuentros</p>
+            <div id="match-history"></div>
+            <a class="inline-link" href="archivo.html">Consultar temporadas anteriores <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="footer-brand" href="index.html"><img src="images/escudo.png" alt="" aria-hidden="true">UD <strong>CHURRAX</strong></a><nav class="footer-nav" aria-label="Navegación del pie de página"><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a></nav><span>FÚTBOL 7 · SEVILLA</span></footer>
+    <script src="standings-data.js"></script>
+    <script src="standings.js"></script>
+    <script src="schedule-data.js"></script>
+    <script src="results-data.js"></script>
+    <script src="season-tracker.js"></script>
+    <script src="schedule.js"></script>
+    <script src="competition-summary.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

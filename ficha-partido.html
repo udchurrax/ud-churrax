@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0D182E">
+    <meta name="description" content="Ficha del partido de UD Churrax: resultado, jornada, rival, goleadores, crónica y fotografías.">
+    <title>Ficha del partido | UD Churrax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="UD Churrax, inicio"><img class="brand-mark" src="images/escudo.png" alt=""><span class="brand-name">UD <strong>CHURRAX</strong></span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html" aria-current="page">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a></nav>
+    </header>
+    <main>
+        <section class="page-hero section-dark">
+            <div class="section-wrap">
+                <a class="breadcrumb" href="competicion.html#calendario">COMPETICIÓN <span>/</span> PARTIDO</a>
+                <p class="eyebrow">PRIMERA DIVISIÓN · IMD SEVILLA · TEMPORADA 2026/27</p>
+                <h1>FICHA<br><span>DEL PARTIDO.</span></h1>
+                <p class="page-lead" id="match-page-lead">Encuentro de UD Churrax</p>
+            </div>
+        </section>
+        <section class="match-detail section-wrap" id="match-detail" aria-live="polite">
+            <p class="schedule-empty">Cargando ficha del partido…</p>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="footer-brand" href="index.html"><img src="images/escudo.png" alt="" aria-hidden="true">UD <strong>CHURRAX</strong></a><nav class="footer-nav" aria-label="Navegación del pie de página"><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a></nav><span>FÚTBOL 7 · SEVILLA</span></footer>
+    <script src="schedule-data.js"></script>
+    <script src="results-data.js"></script>
+    <script src="match-detail.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

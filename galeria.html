@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0D182E">
+    <meta name="description" content="Fotos y vídeos de partidos, goles y postpartidos de UD Churrax.">
+    <title>Galería | UD Churrax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="UD Churrax, inicio"><img class="brand-mark" src="images/escudo.png" alt=""><span class="brand-name">UD <strong>CHURRAX</strong></span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html" aria-current="page">Galería</a></nav>
+    </header>
+    <main>
+        <section class="page-hero section-dark">
+            <div class="section-wrap">
+                <a class="breadcrumb" href="index.html">INICIO <span>/</span> GALERÍA</a>
+                <p class="eyebrow">FOTOS · VÍDEOS · POSTPARTIDO</p>
+                <h1>MOMENTOS<br><span>QUE NOS UNEN.</span></h1>
+                <p class="page-lead">Partidos, goles y recuerdos del Churrax, guardados por temporada.</p>
+            </div>
+        </section>
+        <section class="gallery section-wrap detail-gallery" id="galeria">
+            <div class="gallery-toolbar"><div><span class="section-kicker"><span>01</span> ÁLBUM DEL EQUIPO</span><h2>LA <span>GALERÍA.</span></h2></div><p>La foto de cabecera se elige al azar entre las imágenes y cambia cada hora. Los vídeos se reproducen desde su tarjeta.</p></div>
+            <div class="gallery-grid" id="gallery-grid" aria-label="Fotos y vídeos de UD Churrax"></div>
+            <p class="gallery-status" id="gallery-status" role="status"></p>
+        </section>
+    </main>
+    <footer class="site-footer"><a class="footer-brand" href="index.html"><img src="images/escudo.png" alt="" aria-hidden="true">UD <strong>CHURRAX</strong></a><nav class="footer-nav" aria-label="Navegación del pie de página"><a href="club.html">El club</a><a href="plantilla.html">Plantilla</a><a href="competicion.html">Competición</a><a href="noticias.html">Noticias</a><a href="archivo.html">Archivo</a><a href="galeria.html">Galería</a></nav><span>FÚTBOL 7 · SEVILLA</span></footer>
+    <dialog class="gallery-viewer" id="gallery-viewer" aria-label="Contenido de la galería">
+        <button class="viewer-close" type="button" aria-label="Cerrar contenido">×</button>
+        <img class="viewer-image" src="" alt="" hidden>
+        <video class="viewer-video" controls playsinline preload="metadata" hidden></video>
+        <p class="viewer-caption"></p>
+    </dialog>
+    <script src="gallery-data.js"></script><script src="gallery.js"></script><script src="script.js"></script>
+</body>
+</html>
